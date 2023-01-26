@@ -44,7 +44,7 @@ class StudentServiceTest {
     void getStudentByEmail() {
 
         Student expected =  new Student("reema@gmail.com", "reema brown", "password");              
-        assertThat(studentService.getStudentByEmail("reema@gmail.com").equals(expected));
+        assertThat(studentService.getStudentByEmail("reema@gmail.com")).isEqualTo(expected);
 
     }
 }
