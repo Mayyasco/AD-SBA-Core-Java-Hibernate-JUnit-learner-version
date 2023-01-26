@@ -26,7 +26,7 @@ class StudentServiceTest {
         CommandLine.addData();
     }
 
-    @Test
+    @Test 
     void getAllStudents() {
 
         List<Student> expected = new ArrayList<>(Arrays.asList(
